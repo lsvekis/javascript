@@ -1,0 +1,163 @@
+const fun1 = function (val) {
+    counter=counter+val;
+    const output = `<div>Hello ${counter}</div>`;
+    document.write(output);
+}
+let counter = 0;
+let word = '';
+fun1(21);
+fun1(2);
+fun1(3);
+fun2('h');
+fun2('e');
+fun2('l');
+fun2('l');
+fun2('o');
+//fun1 = 100;
+console.log(fun1);
+
+const fun5 = fun1;
+fun5(1000);
+
+function fun2(val){
+    word = word + val;
+    counter++;
+    let output = `<div>Hello ${counter}</div>`;
+    output += `<div>Hello ${word}</div>`;
+    document.write(output);
+}
+let valTotal = 0;
+valTotal += fun3(10,44,55);
+valTotal += fun3(4,66);
+valTotal += fun3(5);
+console.log(valTotal);
+
+function fun3(num1=0,num2=0,num3=0){
+    const total = num1 + num2 + num3;
+    console.log(valTotal);
+    return total;
+}
+
+const temp = 5000;
+fun4(100);
+
+function fun4(val){
+    const temp = 9;
+    const myVal = val + temp;
+    //console.clear();
+    console.log(myVal);
+}
+const arr1 = ['one',100,false,null,[1,2,3]];
+const obj1 = {
+    first:'Laurence',
+    'full Name':'Laurence Svekis',
+    id : 100,
+    status : true,
+    arr : [1,2,3,'Hello World']
+};
+const arr2 = arr1;
+const obj2 = obj1;
+obj2.id = 5000;
+arr2[0] = 'Hello World';
+arr1[3] = `Laurence Svekis`;
+obj1.first = `Linda Jones`;
+
+let val = arr1[4][0];
+val = obj1['full Name'];
+val = obj1.first;
+
+val = obj2.arr[3];
+
+console.log(val);
+document.write(val);
+
+let _test5 = 'Laurence';
+let $test_ = 'Svekis';
+let test$ = 'hello';
+let TESTtest = 'hello';
+let myFirstName = 'Laurence';
+//let let = 'Not a good idea';
+let myLastName = $test_;
+let output = myFirstName;
+let fullName = `${myFirstName} ${myLastName}`;
+output = fullName;
+console.log(output);
+document.write(output);
+let myStr = 'Laurence';
+let myNum = 0;
+let a;
+let b,c,d;
+let val;
+
+myStr = 5;
+myNum = 'test';
+
+b = 5;
+c = 10;
+d = Number('20');
+d = null;
+d = true;
+d = false;
+d = c.toString();
+a = '10a00X';
+d = parseInt(a);
+val = d + b + c ;
+val = 100 + d;
+val = typeof(d);
+
+console.log(val);
+document.write(val);
+let a = 'Laurence Svekis';
+let b = 10;
+let e = 5;
+let f = 20;
+let myStr1 = 'Hello\'s "world"';
+let myStr2 = "\"Hello\" 'world'";
+let myStr3 = `Hello'      s      
+"world"`;
+let tempLit = `Math ${b + e + f} Hello`;
+const myName = 'Laurence Svekis';
+//myName = 'Svekis';
+
+{
+    const b = 1000;
+    console.log(b);
+    //var c = 100;
+    //let d = 100;
+}
+//console.log(c);
+//console.log(d);
+console.log(b);
+console.log(myName);
+a = 'Hello World';
+let val = b + e + f;
+val = myStr1 + ' ' + myStr2 + ' ' + myStr3;
+val = tempLit;
+val = `${myStr1} ${myStr2} ${myStr3}`;
+console.clear();
+console.log(val);
+document.write(val);
+/*
+This is my code!
+Laurence Svekis
+*/
+alert('Hello');
+const res = prompt('What is your name?');
+console.log(res);
+document.write(res); //Comment
+console.log('Log Message');
+console.error('Error Message');
+console.info('Info Message');
+console.warn('Warning Message');
+//console.clear();
+console.log('New line with Log');
+
+
+
+{
+    document.write('<br>Output Message');
+    document.write('<br>Output Message');
+}
+
+//document.write('Output Message 3');
+//document.write('<br>Output Message 4');
