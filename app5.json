@@ -1,0 +1,25 @@
+[
+    {
+        "title": "slide 1",
+        "html": "<h1>Laurence</h1>",
+        "back": "purple",
+        "color": "white"
+    },
+    {
+        "title": "slide 2",
+        "html": "<h1>Svekis</h1>",
+        "back": "blue",
+        "color": "white"
+    },    {
+        "title": "slide 4",
+        "html": "<h1>Svekis</h1>",
+        "back": "blue",
+        "color": "white"
+    },
+    {
+        "title": "slide 3",
+        "html": "<h1>JavaScript</h1>",
+        "back": "yellow",
+        "color": "black"
+    }
+]

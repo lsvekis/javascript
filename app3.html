@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Course</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            padding-top: 15px;
+        }
+
+        .myForm {
+            width: 90%;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        #myForm input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.2em;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myForm">
+        <form id="myForm">
+            <h1>Send Message</h1>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+
+            </div>
+            <input type="submit" value="send message">
+        </form>
+    </div>
+    <script src="app3.js"></script>
+</body>
+
+</html>
