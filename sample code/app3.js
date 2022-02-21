@@ -1,0 +1,12 @@
+let _test5 = 'Laurence';
+let $test_ = 'Svekis';
+let test$ = 'hello';
+let TESTtest = 'hello';
+let myFirstName = 'Laurence';
+//let let = 'Not a good idea';
+let myLastName = $test_;
+let output = myFirstName;
+let fullName = `${myFirstName} ${myLastName}`;
+output = fullName;
+console.log(output);
+document.write(output);
