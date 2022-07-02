@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript </title>
+  <style>
+    .dice{
+      font-size:1em;
+    }
+  </style>
+</head>
+<body>
+  <button>Roll</button>
+  <div class="results"></div>
+  <script src="app2.js"></script>
+</body>
+</html>
+
+
+const btn = document.querySelector('button');
+const output = document.querySelector('.results');
+const message = document.createElement('div');
+output.append(message);
+message.textContent = 'Hello World';
+const game = {players:4,ele:[]};
+buildGame();
+
+function buildGame(){
+    for(let i=0;i<game.players;i++){
+        const ele = document.createElement('div');
+        ele.classList.add('dice');
+        game.ele.push(ele);
+        ele.textContent = '-';
+        output.append(ele);
+    }
+}
+
+btn.addEventListener('click',rollDice);
+
+function rollDice(){
+    const tracker = {winner:[],highValue:0};
+    const holder = [];
+    for(let i=0;i<game.players;i++){
+        const playerRoll = roller();
+        holder.push(playerRoll.rollValue);
+        console.log(playerRoll.rollValue + `= Player ${i+1}`);
+        if(tracker.highValue < playerRoll.rollValue){
+            tracker.highValue = playerRoll.rollValue;
+            //tracker.winner.push(`Player ${i+1}`);
+        }else if(tracker.highValue == playerRoll.rollValue){
+            //tracker.winner.push(`Player ${i+1}`);
+        }
+        game.ele[i].innerHTML = `${playerRoll.html} Player ${i+1} Value = ${playerRoll.rollValue}`;
+        //console.log(playerRoll);
+    }
+    holder.forEach((playerScore,index)=>{
+        if(tracker.highValue==playerScore){
+            tracker.winner.push(`Player ${index+1}`);
+            game.ele[index].style.color = 'green';
+        }else{
+            game.ele[index].style.color = '#ddd';
+        }
+    })
+    console.log( tracker);
+}
+
+for(let i=0;i<6;i++){
+    const val = 9856 + i;
+    //output.innerHTML += `&#${val}`;
+}
+
+function roller(){
+    const ranNum = Math.floor(Math.random()*6);
+    const val = 9856 + ranNum;
+    return {html:`&#${val}`,rollValue:ranNum+1};
+}
